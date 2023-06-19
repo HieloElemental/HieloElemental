@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">Hielo Elemental</h1>
+<h1 style="text-aling: center;">Hielo Elemental</h1>
 
 <!--
 **HieloElemental/HieloElemental** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
