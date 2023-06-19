@@ -1,4 +1,19 @@
-<h1 style="text-aling: center;">Hielo Elemental</h1>
+<div 
+  style="
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;"
+  >
+
+  <img src="https://avatars.githubusercontent.com/u/136840526?s=400" style="border-radius: 50%;">
+  <h1>Hielo Elemental</h1>
+  <h2 style="letter-spacing: 5px; font-size: 20px;">--Web Developer--</h2>
+  <p style="text-align: left;">Hey there! Let me introduce myself. I'm Hielo Elemental, a furry blue wolf that loves programing.</p>
+</div>
 
 <!--
 **HieloElemental/HieloElemental** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
