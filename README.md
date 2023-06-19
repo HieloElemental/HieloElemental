@@ -1,5 +1,5 @@
 <div 
-  aling="center"
+  align="center"
   style="
     margin: 0;
     padding: 0;
