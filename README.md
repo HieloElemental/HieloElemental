@@ -20,12 +20,13 @@ Here are some of the skills and technologies I work with.
 [![ReactJs](https://img.shields.io/badge/react-black?style=for-the-badge&logo=react)](https://github.com/HieloElemental)
 [![Git (learning)](https://img.shields.io/badge/git(learning)-black?style=for-the-badge&logo=git)](https://github.com/HieloElemental)
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![image](https://github-readme-stats.vercel.app/api/top-langs/?username=HieloElemental&theme=dark)
+
 Also previous experience
 
 [![PHP (mostly forgotten)](https://img.shields.io/badge/php(mostly%20forgotten)-black?style=for-the-badge&logo=php)](https://github.com/HieloElemental)
 [![Java (mostly forgotten)](https://img.shields.io/badge/java(mostly%20forgotten)-black?style=for-the-badge&logo=java)](https://github.com/HieloElemental)
 [![C++ (mostly forgotten)](https://img.shields.io/badge/c%2b%2b(mostly%20forgotten)-black?style=for-the-badge&logo=cplusplus)](https://github.com/HieloElemental)
-
 
 
 ### Used Tools
