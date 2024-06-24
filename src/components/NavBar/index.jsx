@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import { Bars3Icon } from "@heroicons/react/24/solid";
 
-import hieloElementalProfilePicture from "../../assets/hieloelemental-profile-picture.png";
+import hieloElementalProfilePicture60 from "../../assets/hieloelemental-profile-picture-60.png";
+import ThemeSwitcher from "../ThemeSwitcher";
 
 const centerLinks = [
   {
@@ -24,6 +25,11 @@ const leftLinks = [
     name: "Github",
     link: "https://github.com/HieloElemental",
   },
+  {
+    name: "switchDarkMode",
+    link: undefined,
+    element: <ThemeSwitcher />,
+  },
 ];
 
 const navUlElements = [centerLinks, leftLinks];
@@ -32,14 +38,14 @@ const NavBar = () => {
   const [isResponsiveOpen, setIsResponsiveOpen] = useState(false);
 
   return (
-    <nav className='bg-stone-300 dark:bg-stone-700 w-full fixed h-14 top-0 left-0 px-4 flex justify-between md:justify-center items-center font-azeret-mono text-md font-light'>
+    <nav className='bg-stone-300 dark:bg-stone-700 w-full fixed h-14 top-0 left-0 px-4 flex justify-between md:justify-center items-center font-azeret-mono text-md font-light z-50'>
       <div className='w-full max-w-5xl h-full flex items-center justify-between'>
         <ul className='flex h-full gap-2 items-center'>
           <li className='h-full'>
             <figure className='h-full'>
               <img
                 className='h-full p-2'
-                src={hieloElementalProfilePicture}
+                src={hieloElementalProfilePicture60}
                 alt='Profile picture'
               />
             </figure>
@@ -60,15 +66,20 @@ const NavBar = () => {
                 key={i}
                 className='flex flex-col items-center justify-center md:flex-row w-full mb-14 md:m-0'
               >
-                {navEl.map(({ name, link, icon }) => {
+                {navEl.map(({ name, link, element }) => {
                   return (
-                    <li key={name} className='w-full'>
-                      <a
-                        href={link}
-                        className='flex items-center justify-center h-14 px-4 w-full border-b border-stone-600 dark:border-stone-400 md:border-none md:min-w-min'
-                      >
-                        {icon || name}
-                      </a>
+                    <li
+                      key={name}
+                      className='w-full flex items-center justify-center'
+                    >
+                      {element || (
+                        <a
+                          href={link}
+                          className='flex items-center justify-center h-14 px-4 w-full border-b border-stone-600 dark:border-stone-400 md:border-none md:min-w-min'
+                        >
+                          {name}
+                        </a>
+                      )}
                     </li>
                   );
                 })}
@@ -77,7 +88,7 @@ const NavBar = () => {
           })}
         </div>
       </div>
-      <div className='flex h-full md:hidden items-center'>
+      <div className='flex h-14 md:hidden items-center fixed right-0'>
         <Bars3Icon
           className='h-full p-4 cursor-pointer'
           onClick={() => setIsResponsiveOpen(!isResponsiveOpen)}
