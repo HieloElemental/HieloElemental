@@ -4,7 +4,11 @@ const sleep = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
-const phrases = ["HieloElemental", "a FullStack Web Developer"];
+const phrases = [
+  "HieloElemental",
+  "a FullStack Web Developer",
+  "a MERN Stack Relational Developer",
+];
 
 const TextTypingAnimated = () => {
   const [phrase, setPhrase] = useState("");
@@ -25,7 +29,7 @@ const TextTypingAnimated = () => {
       }
     } else {
       if (phrase.length > 0) {
-        sleep(100).then(() => {
+        sleep(50).then(() => {
           setPhrase(phrase.slice(0, -1));
         });
       } else {
