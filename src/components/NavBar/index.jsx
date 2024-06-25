@@ -1,6 +1,7 @@
 import { useState } from "react";
-
 import { Bars3Icon } from "@heroicons/react/24/solid";
+import GitHubLogoIcon from "../../assets/github-logo.svg?react";
+import LinkedInLogoIcon from "../../assets/linkedin-logo.svg?react";
 
 import hieloElementalProfilePicture60 from "../../assets/hieloelemental-profile-picture-60.png";
 import ThemeSwitcher from "../ThemeSwitcher";
@@ -24,6 +25,14 @@ const leftLinks = [
   {
     name: "Github",
     link: "https://github.com/HieloElemental",
+    element: <GitHubLogoIcon className='fill-stone-700 dark:fill-stone-300' />,
+  },
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/hielo-elemental",
+    element: (
+      <LinkedInLogoIcon className='fill-stone-700 dark:fill-stone-300' />
+    ),
   },
   {
     name: "switchDarkMode",
@@ -64,15 +73,25 @@ const NavBar = () => {
             return (
               <ul
                 key={i}
-                className='flex flex-col items-center justify-center md:flex-row w-full mb-14 md:m-0'
+                className={`flex ${
+                  i === 0 ? "flex-col" : "flex-row"
+                } items-center justify-center md:flex-row w-full mb-14 md:m-0`}
               >
                 {navEl.map(({ name, link, element }) => {
                   return (
                     <li
                       key={name}
-                      className='w-full flex items-center justify-center'
+                      className='w-full md:w-fit flex items-center justify-center'
                     >
-                      {element || (
+                      {element ? (
+                        <a
+                          href={link}
+                          className='flex items-center justify-center h-14 px-4'
+                        >
+                          {" "}
+                          {element}
+                        </a>
+                      ) : (
                         <a
                           href={link}
                           className='flex items-center justify-center h-14 px-4 w-full border-b border-stone-600 dark:border-stone-400 md:border-none md:min-w-min'

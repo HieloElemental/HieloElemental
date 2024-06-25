@@ -16,7 +16,7 @@ const Button = ({
 }) => {
   return (
     <div
-      className={`inline-block px-2 py-3 max-w-fit rounded-md cursor-pointer ${typeClassNames[type]} ${className}`}
+      className={`inline-block p-2 max-w-fit rounded-md cursor-pointer ${typeClassNames[type]} ${className}`}
     >
       <a href={href} download={download}>
         {children}
