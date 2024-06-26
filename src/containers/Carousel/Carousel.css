@@ -1,0 +1,8 @@
+.slick-arrow {
+  fill: inherit;
+  height: 100%;
+}
+
+.slick-arrow::before {
+  content: none !important;
+}

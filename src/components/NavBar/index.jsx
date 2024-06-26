@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
-import GitHubLogoIcon from "../../assets/github-logo.svg?react";
-import LinkedInLogoIcon from "../../assets/linkedin-logo.svg?react";
 
 import hieloElementalProfilePicture60 from "../../assets/hieloelemental-profile-picture-60.png";
 import ThemeSwitcher from "../ThemeSwitcher";
+import SocialIcon from "../SocialIcon";
 
 const centerLinks = [
   {
@@ -25,13 +24,21 @@ const leftLinks = [
   {
     name: "Github",
     link: "https://github.com/HieloElemental",
-    element: <GitHubLogoIcon className='fill-stone-700 dark:fill-stone-300' />,
+    element: (
+      <SocialIcon
+        icon='GitHub'
+        className='fill-stone-700 dark:fill-stone-300'
+      />
+    ),
   },
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/hielo-elemental",
     element: (
-      <LinkedInLogoIcon className='fill-stone-700 dark:fill-stone-300' />
+      <SocialIcon
+        icon='LinkedIn'
+        className='fill-stone-700 dark:fill-stone-300'
+      />
     ),
   },
   {

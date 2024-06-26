@@ -5,6 +5,74 @@ import Button from "../../components/Button";
 
 import hieloElementalProfilePicture350 from "../../assets/hieloelemental-profile-picture-350.png";
 import hieloElementalCurriculumVitae from "../../assets/hieloelemental-curriculum-vitae.pdf";
+import Carousel from "../../containers/Carousel/index";
+
+const skills = [
+  {
+    name: "React",
+    icon: "React",
+  },
+  {
+    name: "JavaScript",
+    icon: "Javascript",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "Tailwind",
+  },
+  {
+    name: "Node.js",
+    icon: "Nodejs",
+  },
+  {
+    name: "Express.js",
+    icon: "Expressjs",
+  },
+  {
+    name: "MySQL",
+    icon: "MySQL",
+  },
+  {
+    name: "KnexJs",
+    icon: "Knexjs",
+  },
+  {
+    name: "Git",
+    icon: "Git",
+  },
+  {
+    name: "Github",
+    icon: "GitHub",
+  },
+  {
+    name: "React Router",
+    icon: "ReactRouter",
+  },
+  {
+    name: "HTML5",
+    icon: "Html5",
+  },
+  {
+    name: "CSS3",
+    icon: "Css3",
+  },
+  {
+    name: "NPM",
+    icon: "NPM",
+  },
+  {
+    name: "PHP",
+    icon: "PHP",
+  },
+  {
+    name: "C++",
+    icon: "CPP",
+  },
+  {
+    name: "Java",
+    icon: "Java",
+  },
+];
 
 const Home = () => {
   return (
@@ -21,17 +89,19 @@ const Home = () => {
           />
         </figure>
       </Header>
-      <main className='flex justify-center'>
-        <div className='md:max-w-4xl xl:max-w-7xl'>
-          <div className='flex flex-col md:flex-row items-center md:items-start md:gap-4'>
-            <div className='bg-stone-200 dark:bg-stone-800 p-4 pt-8 max-w-2xl rounded-b-md'>
+      <main className='flex justify-center items-center flex-col'>
+        <div className='w-full md:max-w-4xl xl:max-w-7xl mb-4'>
+          <div className='w-full flex flex-col md:flex-row items-center md:items-start justify-start md:justify-between md:gap-4'>
+            <div className='bg-stone-200 dark:bg-stone-800 p-4 pt-8 max-w-2xl rounded-b-md shadow-md'>
               <p>
                 <span className='text-lime-900 dark:text-lime-100 font-azeret-mono'>
                   Backgound Summary
                 </span>
-                <h1 className='font-azeret-mono text-2xl font-bold'>
+                <br />
+                <span className='font-azeret-mono text-2xl font-bold'>
                   I&apos;ll colaborate with the web
-                </h1>
+                </span>
+                <br />
                 I&apos;m a Systems Engineering student and self-taught
                 full-stack developer. I am driven by a relentless passion for
                 coding, an insatiable thirst for learning, and a unique ability
@@ -40,14 +110,15 @@ const Home = () => {
                 innovative team.
               </p>
             </div>
-            <div className='bg-stone-800 dark:bg-stone-200 text-stone-50 dark:text-stone-950 p-4 pt-8 rounded-b-md max-w-96'>
+            <div className='bg-stone-800 dark:bg-stone-200 text-stone-50 dark:text-stone-950 p-4 pt-8 rounded-b-md md:min-w-52 max-w-96 shadow-md'>
               <p>
                 <span className='text-lime-100 dark:text-lime-900 font-azeret-mono text-xs'>
                   Profesional Interests?
                 </span>
-                <h1 className='font-azeret-mono text-2xl font-bold'>
+                <br />
+                <span className='font-azeret-mono text-2xl font-bold'>
                   Here&apos;s my CV
-                </h1>
+                </span>
               </p>
               <Button
                 type='primary'
@@ -56,6 +127,17 @@ const Home = () => {
               >
                 Download CV
               </Button>
+            </div>
+          </div>
+        </div>
+        <div className='w-full bg-stone-300 dark:bg-stone-950 pt-8 flex flex-col items-center justify-center'>
+          <div className='flex flex-col items-start w-full md:max-w-5xl'>
+            <h1 className='w-fit text-sm bg-stone-500 dark:bg-stone-800 pt-2 pb-1 px-4 ml-12 font-azeret-mono text-lime-100 dark:text-lime-100 rounded-t-lg shadow-inner'>
+              Technical Skills
+            </h1>
+            <div className='bg-stone-100 dark:bg-stone-900 p-4 lg:rounded-t-lg w-full swiper multiple-slide-carousel swiper-container relative'>
+              <p>Here are some languages and technologies that I use:</p>
+              <Carousel skills={skills} />
             </div>
           </div>
         </div>
