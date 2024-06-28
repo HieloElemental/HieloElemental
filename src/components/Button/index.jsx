@@ -15,13 +15,13 @@ const Button = ({
   download = false,
 }) => {
   return (
-    <div
+    <button
       className={`inline-block p-2 max-w-fit rounded-md cursor-pointer ${typeClassNames[type]} ${className}`}
     >
       <a href={href} download={download}>
         {children}
       </a>
-    </div>
+    </button>
   );
 };
 Button.propTypes = {

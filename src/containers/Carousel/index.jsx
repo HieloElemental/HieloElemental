@@ -9,9 +9,36 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
 import "./Carousel.css";
 
+const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => {
+  return (
+    <div {...props} className={`min-w-10 ${currentSlide === 0 ? "" : ""}`}>
+      <ChevronRightIcon className='fill-stone-900 dark:fill-stone-100 h-full max-w-10 ' />
+    </div>
+  );
+};
+SlickArrowLeft.propTypes = {
+  currentSlide: PropTypes.number,
+  slideCount: PropTypes.number,
+};
+
+const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => {
+  return (
+    <button
+      {...props}
+      className={`min-w-10 ${currentSlide === slideCount ? "" : ""}`}
+    >
+      <ChevronLeftIcon className='fill-stone-900 dark:fill-stone-100 h-full max-w-10' />
+    </button>
+  );
+};
+SlickArrowRight.propTypes = {
+  currentSlide: PropTypes.number,
+  slideCount: PropTypes.number,
+};
+
 const Carousel = ({ skills }) => {
   const settings = {
-    className: "slider variable-width",
+    className: "slider variable-width flex",
     dots: true,
     infinite: true,
     speed: 500,
@@ -19,20 +46,8 @@ const Carousel = ({ skills }) => {
     slidesToScroll: 1,
     initialSlide: 0,
     variableWidth: true,
-    nextArrow: (
-      <div>
-        <div className='h-full'>
-          <ChevronRightIcon className='fill-stone-900 dark:fill-stone-100 h-full max-w-10 ' />
-        </div>
-      </div>
-    ),
-    prevArrow: (
-      <div>
-        <div className='h-full'>
-          <ChevronLeftIcon className='fill-stone-900 dark:fill-stone-100 h-full max-w-10' />
-        </div>
-      </div>
-    ),
+    nextArrow: <SlickArrowLeft />,
+    prevArrow: <SlickArrowRight />,
     responsive: [
       {
         breakpoint: 1024,
@@ -61,7 +76,7 @@ const Carousel = ({ skills }) => {
     ],
   };
   return (
-    <div className='slider-container px-8 pb-4'>
+    <div className='slider-container pb-4'>
       <Slider {...settings}>
         {skills.map(({ name, icon }, index) => (
           <figure
