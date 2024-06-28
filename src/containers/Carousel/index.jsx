@@ -74,7 +74,7 @@ const Carousel = ({ skills }) => {
                 icon={icon}
               />
             </span>
-            <span>{name}</span>
+            <span className='block font-azeret-mono'>{name}</span>
           </figure>
         ))}
       </Slider>
