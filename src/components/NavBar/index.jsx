@@ -4,6 +4,7 @@ import { Bars3Icon } from "@heroicons/react/24/solid";
 import hieloElementalProfilePicture60 from "../../assets/hieloelemental-profile-picture-60.png";
 import ThemeSwitcher from "../ThemeSwitcher";
 import SocialIcon from "../SocialIcon";
+import { Link } from "react-router-dom";
 
 const centerLinks = [
   {
@@ -91,13 +92,13 @@ const NavBar = () => {
                       className='w-full md:w-fit flex items-center justify-center'
                     >
                       {element ? (
-                        <a
-                          href={link}
+                        <Link
+                          to={link}
                           className='flex items-center justify-center h-14 px-4'
                         >
                           {" "}
                           {element}
-                        </a>
+                        </Link>
                       ) : (
                         <a
                           href={link}
