@@ -1,4 +1,3 @@
-import React from "react";
 import PropTypes from "prop-types";
 
 const skeletonTypes = {
@@ -8,7 +7,7 @@ const skeletonTypes = {
   third: "bg-stone-400 dark:bg-stone-300 text-stone-950 dark:text-stone-800",
 };
 
-const CardSkeleton = ({ type, maxWidth }) => {
+const CardSkeleton = ({ type = "primary", maxWidth = "max-w-sm" }) => {
   return (
     <div
       className={`${skeletonTypes[type]} p-4 pt-2 ${maxWidth} w-full h-fit md:rounded-md shadow-md animate-pulse`}
@@ -27,11 +26,6 @@ const CardSkeleton = ({ type, maxWidth }) => {
 CardSkeleton.propTypes = {
   type: PropTypes.oneOf(["primary", "secondary", "third"]),
   maxWidth: PropTypes.string,
-};
-
-CardSkeleton.defaultProps = {
-  type: "primary",
-  maxWidth: "max-w-sm",
 };
 
 export default CardSkeleton;
