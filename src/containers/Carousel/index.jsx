@@ -10,6 +10,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import "./Carousel.css";
 
 const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => {
+  slideCount;
   return (
     <div {...props} className={`min-w-10 ${currentSlide === 0 ? "" : ""}`}>
       <ChevronRightIcon className='fill-stone-900 dark:fill-stone-100 h-full max-w-10 ' />
@@ -43,9 +44,9 @@ const Carousel = ({ skills }) => {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     initialSlide: 0,
-    variableWidth: true,
+    variableWidth: false,
     nextArrow: <SlickArrowLeft />,
     prevArrow: <SlickArrowRight />,
     responsive: [
@@ -69,8 +70,8 @@ const Carousel = ({ skills }) => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
     ],
@@ -83,7 +84,7 @@ const Carousel = ({ skills }) => {
             key={index}
             className='flex flex-col items-center justify-center text-center w-4 px-8'
           >
-            <span className='p-2'>
+            <span className='p-2 flex flex-col items-center justify-center'>
               <SocialIcon
                 className='h-32 w-32 fill-stone-900s dark:fill-stone-100'
                 icon={icon}
