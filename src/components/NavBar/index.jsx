@@ -92,20 +92,20 @@ const NavBar = () => {
                       className='w-full md:w-fit flex items-center justify-center'
                     >
                       {element ? (
-                        <Link
-                          to={link}
+                        <a
+                          href={link}
                           className='flex items-center justify-center h-14 px-4'
                         >
                           {" "}
                           {element}
-                        </Link>
+                        </a>
                       ) : (
-                        <a
-                          href={link}
+                        <Link
+                          to={link}
                           className='flex items-center justify-center h-14 px-4 w-full border-b border-stone-600 dark:border-stone-400 md:border-none md:min-w-min'
                         >
                           {name}
-                        </a>
+                        </Link>
                       )}
                     </li>
                   );
