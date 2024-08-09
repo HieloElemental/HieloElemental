@@ -52,20 +52,20 @@
 
 ### Inline Code
 
-Use the \`code\` keyword.
+Use the `code` keyword.
 
 ### Code Blocks
 
-\`\`\`javascript
+```javascript
 function helloWorld() {
     console.log("Hello, world!");
 }
-\`\`\`
+```
 
-\`\`\`python
+```python
 def hello_world():
     print("Hello, world!")
-\`\`\`
+```
 
 ## Blockquotes
 
