@@ -88,6 +88,10 @@ def hello_world():
 
 ~~Strikethrough Text~~
 
+## UTF-8 Characters
+
+áéíóú, àèìòù, ÄëïÖü ¿¡
+
 ## Footnotes
 
 Here is a footnote reference[^1].
