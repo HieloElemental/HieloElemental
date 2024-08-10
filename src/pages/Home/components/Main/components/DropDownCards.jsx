@@ -13,10 +13,9 @@ const DropDownCards = () => {
           title="I'll colaborate with the web"
         >
           I&apos;m a Systems Engineering student and self-taught full-stack
-          developer. I am driven by a relentless passion for coding, an
-          insatiable thirst for learning, and a unique ability to adapt and
-          thrive in both solo and team environments. I am ready to contribute
-          and grow within a collaborative and innovative team.
+          developer with a passion for coding, a drive to learn, and the ability
+          to excel both independently and as part of a team. I&apos;m eager to
+          bring my skills to a collaborative, innovative environment.
         </DropDownCard>
         <DropDownCard
           type='secondary'

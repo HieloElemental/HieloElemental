@@ -4,6 +4,8 @@ import DarkMode from "./containers/DarkMode";
 import { LocalStorageProvider } from "./contexts/LocalStorageProvider";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Projects from "./pages/Projects";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/Blog/pages/BlogPost/index";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,12 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home /> },
       { path: "/projects", element: <Projects /> },
+      { path: "/blog", element: <Blog /> },
+      {
+        path: "/blog/:blogname",
+        element: <BlogPost />,
+        loader: async ({ params }) => params.blogname,
+      },
     ],
     errorElement: (
       <>

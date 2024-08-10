@@ -7,14 +7,22 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.4",
+    "gh-pages": "^6.1.1",
+    "i": "^0.3.7",
+    "npm": "^10.8.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
     "react-router-dom": "^6.26.0",
     "react-slick": "^0.30.2",
+    "react-syntax-highlighter": "^15.5.0",
+    "remark-gfm": "^4.0.0",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
@@ -30,5 +38,6 @@
     "tailwindcss": "^3.4.4",
     "vite": "^5.3.1",
     "vite-plugin-svgr": "^4.2.0"
-  }
+  },
+  "homepage": "https://HieloElemental.github.io/"
 }
