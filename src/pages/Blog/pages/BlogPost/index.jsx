@@ -1,5 +1,5 @@
 import Layout from "../../../../containers/Layout";
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import {
   oneDark,
@@ -16,9 +16,10 @@ import CardSkeleton from "../../../../components/Card/CardSkeleton";
 
 const BlogPost = () => {
   const { isDarkModeEnabled } = useContext(LocalStorageContext);
-  const blogName = useLoaderData();
+  const { blogname } = useParams();
+  console.log(blogname);
   const { postContent, postTitle, isLoading, error } =
-    useBlogIndividualPost(blogName);
+    useBlogIndividualPost(blogname);
   return (
     <>
       {isLoading ? (
@@ -35,7 +36,7 @@ const BlogPost = () => {
             Go back to the{" "}
             <Link
               className='text-blue-500 hover:text-blue-700 underline'
-              to='HieloElemental/blog'
+              to='/blog'
             >
               Blog List
             </Link>
