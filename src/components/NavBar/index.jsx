@@ -9,15 +9,15 @@ import { Link } from "react-router-dom";
 const centerLinks = [
   {
     name: "Home",
-    link: "/",
+    link: "/HieloElemental",
   },
   {
     name: "Projects",
-    link: "/projects",
+    link: "/HieloElemental/projects",
   },
   {
     name: "Blog",
-    link: "/blog",
+    link: "/HieloElemental/blog",
   },
 ];
 

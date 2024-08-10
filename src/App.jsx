@@ -17,11 +17,11 @@ const router = createBrowserRouter([
       </>
     ),
     children: [
-      { path: "/", element: <Home /> },
-      { path: "/projects", element: <Projects /> },
-      { path: "/blog", element: <Blog /> },
+      { path: "/HieloElemental/", element: <Home /> },
+      { path: "/HieloElemental/projects", element: <Projects /> },
+      { path: "/HieloElemental/blog", element: <Blog /> },
       {
-        path: "/blog/:blogname",
+        path: "/HieloElemental/blog/:blogname",
         element: <BlogPost />,
         loader: async ({ params }) => params.blogname,
       },

@@ -35,7 +35,7 @@ const BlogPost = () => {
             Go back to the{" "}
             <Link
               className='text-blue-500 hover:text-blue-700 underline'
-              to='/blog'
+              to='HieloElemental/blog'
             >
               Blog List
             </Link>

@@ -27,7 +27,7 @@ const Blog = () => {
               title={title}
               type='secondary'
               maxWidth='max-w-sm'
-              to={`/blog/${directoryName}`}
+              to={`/HieloElemental/blog/${directoryName}`}
             >
               <p>{summary}</p>
               <h2 className='text-right font-azeret-mono'>
