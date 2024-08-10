@@ -8,28 +8,34 @@
   </p>
 </p>
 
-
 ### Skills
+
 Here are some of the skills and technologies I work with.
 
+[![ReactJs](https://img.shields.io/badge/react-black?style=for-the-badge&logo=react)](https://github.com/HieloElemental)
+[![JavaScript](https://img.shields.io/badge/javascript-black?style=for-the-badge&logo=javascript)](https://github.com/HieloElemental)
+[![TailwindCss](https://img.shields.io/badge/tailwind-black?style=for-the-badge&logo=tailwindcss)](https://github.com/HieloElemental)
+[![NodeJs](https://img.shields.io/badge/node.js-black?style=for-the-badge&logo=node.js)](https://github.com/HieloElemental)
+[![Express](https://img.shields.io/badge/express-black?style=for-the-badge&logo=express)](https://github.com/HieloElemental)
+[![MySQL](https://img.shields.io/badge/mysql-black?style=for-the-badge&logo=mysql)](https://github.com/HieloElemental)
+[![KnexJs](https://img.shields.io/badge/knex-black?style=for-the-badge&logo=knex.js)](https://github.com/HieloElemental)
+[![Git](https://img.shields.io/badge/git-black?style=for-the-badge&logo=git)](https://github.com/HieloElemental)
+[![Github](https://img.shields.io/badge/github-black?style=for-the-badge&logo=github)](https://github.com/HieloElemental)
+[![React Router](https://img.shields.io/badge/react_router-black?style=for-the-badge&logo=react-router)](https://github.com/HieloElemental)
 [![HTML5](https://img.shields.io/badge/html5-black?style=for-the-badge&logo=html5)](https://github.com/HieloElemental)
 [![CSS3](https://img.shields.io/badge/css3-black?style=for-the-badge&logo=css3)](https://github.com/HieloElemental)
-[![JavaScript](https://img.shields.io/badge/javascript-black?style=for-the-badge&logo=javascript)](https://github.com/HieloElemental)
-[![MySQL](https://img.shields.io/badge/mysql-black?style=for-the-badge&logo=mysql)](https://github.com/HieloElemental)
-[![NodeJs](https://img.shields.io/badge/node.js-black?style=for-the-badge&logo=node.js)](https://github.com/HieloElemental)
-[![ReactJs](https://img.shields.io/badge/react-black?style=for-the-badge&logo=react)](https://github.com/HieloElemental)
-[![Git (learning)](https://img.shields.io/badge/git(learning)-black?style=for-the-badge&logo=git)](https://github.com/HieloElemental)
+[![NPM](https://img.shields.io/badge/npm-black?style=for-the-badge&logo=npm)](https://github.com/HieloElemental)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![image](https://github-readme-stats.vercel.app/api/top-langs/?username=HieloElemental&theme=dark)
 
 Also previous experience
 
-[![PHP (mostly forgotten)](https://img.shields.io/badge/php(mostly%20forgotten)-black?style=for-the-badge&logo=php)](https://github.com/HieloElemental)
-[![Java (mostly forgotten)](https://img.shields.io/badge/java(mostly%20forgotten)-black?style=for-the-badge&logo=java)](https://github.com/HieloElemental)
-[![C++ (mostly forgotten)](https://img.shields.io/badge/c%2b%2b(mostly%20forgotten)-black?style=for-the-badge&logo=cplusplus)](https://github.com/HieloElemental)
-
+[![PHP (mostly forgotten)](<https://img.shields.io/badge/php(mostly%20forgotten)-black?style=for-the-badge&logo=php>)](https://github.com/HieloElemental)
+[![C++ (mostly forgotten)](<https://img.shields.io/badge/c%2b%2b(mostly%20forgotten)-black?style=for-the-badge&logo=cplusplus>)](https://github.com/HieloElemental)
+[![Java (mostly forgotten)](<https://img.shields.io/badge/java(mostly%20forgotten)-black?style=for-the-badge&logo=java>)](https://github.com/HieloElemental)
 
 ### Used Tools
+
 Some of the tools I use in my workflow include:
 
 [![Spotify](https://img.shields.io/badge/spotify-black?style=for-the-badge&logo=spotify)](https://github.com/HieloElemental)
@@ -39,7 +45,7 @@ Some of the tools I use in my workflow include:
 [![VSCode](https://img.shields.io/badge/VSCode-black?style=for-the-badge&logo=visualstudiocode)](https://github.com/HieloElemental)
 [![CMD](https://img.shields.io/badge/CMD-black?style=for-the-badge&logo=windowsterminal)](https://github.com/HieloElemental)
 
-[![GitHub (learning)](https://img.shields.io/badge/github(learning)-black?style=for-the-badge&logo=github)](https://github.com/HieloElemental)
+[![GitHub (learning)](<https://img.shields.io/badge/github(learning)-black?style=for-the-badge&logo=github>)](https://github.com/HieloElemental)
 
 <!--
 **HieloElemental/HieloElemental** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

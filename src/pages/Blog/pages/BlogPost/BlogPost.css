@@ -1,0 +1,129 @@
+/* Generals */
+.md-styles {
+  font-size: 1.25em;
+}
+
+/* Headers */
+.md-styles h1,
+.md-styles h2,
+.md-styles h3,
+.md-styles h4,
+.md-styles h5,
+.md-styles h6 {
+  font-family: "Azeret Mono";
+  font-weight: bold;
+  margin: 0.5em 0;
+  width: 100%;
+}
+
+.md-styles h1 {
+  border-bottom: 3px solid #6a737d;
+  font-size: 2.5em;
+}
+
+.md-styles h2 {
+  border-bottom: 3px solid #6a737d;
+  font-size: 2em;
+}
+
+.md-styles h3 {
+  font-size: 1.75em;
+}
+
+.md-styles h4 {
+  font-size: 1.5em;
+}
+
+.md-styles h5 {
+  font-size: 1.25em;
+}
+
+.md-styles h6 {
+  font-size: 1em;
+}
+
+/* Paragraphs */
+
+.md-styles p {
+  margin: 1em 0;
+}
+
+/* Links */
+.md-styles a {
+  font-family: "Azeret Mono";
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.md-styles a:hover {
+  text-decoration: underline;
+}
+
+/* Lists */
+.md-styles ul,
+.md-styles ol {
+  padding-left: 2em;
+}
+
+.md-styles ul li,
+.md-styles ol li {
+  margin: 0.5em 0;
+}
+
+/* Task Lists */
+.md-styles input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+
+/* Blockquotes */
+.md-styles blockquote {
+  border-left: 4px solid #d0d7de;
+  padding-left: 1em;
+  margin: 1em 0;
+  color: #6a737d;
+}
+
+/* Code */
+.md-styles code {
+  font-family: "Azeret Mono";
+  background-color: #6e768166;
+  border-radius: 3px;
+  padding: 0.2em 0.4em;
+  font-size: 85%;
+}
+
+.md-styles pre > code {
+  background-color: transparent;
+  border: none;
+  font-size: inherit;
+  margin: 0;
+}
+
+/* Tables */
+.md-styles table {
+  border-collapse: collapse;
+}
+
+.md-styles th,
+td {
+  border: 1px solid #d0d7de;
+  padding: 0.5em;
+  text-align: left;
+}
+
+.md-styles th {
+  background-color: #6e768166;
+  font-weight: bold;
+}
+
+/* Horizontal Rules */
+.md-styles hr {
+  border: 0;
+  border-top: 1px solid #d0d7de;
+  margin: 1em 0;
+}
+
+/* Strikethrough */
+.md-styles del {
+  color: #6a737d;
+}
